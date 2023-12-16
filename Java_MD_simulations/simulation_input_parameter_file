@@ -1,0 +1,230 @@
+<BOA> This is a parameter configuration file created on Wed Feb 02 23:21:48 EST 2022
+deltaT:true:1.0E-7;                     // Time Step
+biochemDeltaT:true:1.0E-7;              // Time Step For Biochemical Events
+collisionDeltaT:true:1.0E-7;            // Time Step For Collison Detection
+runTime:true:3.0;                       // Run Time
+fracMove:true:0.3;                      // Coeff. for PAIRS movement
+fracR:true:0.3;                         // Coeff. torque arm for PAIRS movement
+fracMoveTorq:true:0.02;                 // Coeff. for PAIRS torque movement
+myoJ1FracMove:true:0.4;                 // PAIRS Coeff: myosin lever-motor joint
+myoJ1FracR:true:0.4;                    // PAIRS Torque Arm Coeff: myosin lever-motor joint
+myoJ1FracMoveTorq:true:0.4;             // PAIRS Torque Coeff: myosin lever-motor joint
+myoJ2FracMove:true:0.4;                 // PAIRS Coeff: myosin rod-lever joint
+myoJ2FracR:true:0.4;                    // PAIRS Torque Arm Coeff: myosin rod-lever joint
+myoJ2FracMoveTorq:true:0.0;             // PAIRS Torque Coeff: myosin rod-lever joint
+myoDimerLeverFracMoveTorq:true:0.4;     // PAIRS Torque Coeff: myosin dimer lever-lever joint
+myoDimerFracMove:true:0.2;              // PAIRS Coeff: myosin dimer rod-rod
+myoMiniFilFracMove:true:0.07;           // PAIRS Coeff: myosin rod - minifil body
+myoNodeFracMove:true:0.1;               // PAIRS Coeff: myosin rod - node body
+myoMiniFilAlign:true:0.01;              // PAIRS Coeff: myosin dimer alignment in minifils
+myoBrownianAttn:true:1.0;               // Attenuation of Brownian forces on Myo parts
+drawInterval:true:1000.0;               // To Screen Interval
+toFileInterval:true:100000.0;           // Image to File Interval
+toQKFileInterval:true:100000.0;         // QK Interval
+jpegQuality:true:1.0;                   // JPEG Quality
+remoteWriteInterval:true:10000.0;       // Remote Reporting Interval
+rotationPerWrite:true:0.5;              // Rotation Per Image Write
+threeByThreeNodes:false:0.0;            // 3x3 Nodes Test
+fixedMyosinClusters:false:0.0;          // Fixed Myosin Cluster Test
+glidingAssay:false:0.0;                 // Filament Gliding Assay
+nodeGrowthPerStep:true:0.001;           // Node Growth (testing)
+frameWidth:true:880.0;                  // Frame Width
+frameHeight:true:726.0;                 // Frame Height
+bugOff:false:0.0;                       // Bug Off
+showStickyType:false:0.0;               // Show Sticky Letter Type
+showStickyPoints:false:0.0;             // Show Sticky Bond Locations
+transScale:true:1.0;                    // Scale for 3D rendering
+filRenderThicken:true:1.0;              // Scale radius of filament cylinders by:
+lockView:false:0.0;                     // Lock View During Sim.
+initialFilaments:true:0.0;              // Initial Actin Filaments
+initialNodes:true:0.0;                  // Initial Protein Nodes
+initialMyoMiniFils:true:0.0;            // Initial Myosin Minifilaments
+numMyoDimersEachEndOfMiniFil:true:10.0; // Number of Myosin Dimers At Each End of Minifilaments
+numChamberFixedMyos:true:0.0;           // Number of Myosins Fixed to Chamber
+numChamberFixedMyoDimers:true:0.0;      // Number of Myosin Dimers Fixed to Chamber
+numHotSpotsOnCortex:true:0.0;           // Number of Hot Spots On Cortex
+numOffCenterHotSpotRows:true:0.0;       // Number of Off-Center Hot Spot Rows On Cortex
+hotSpotRowSpacing:true:1.0;             // Spacing of Hot Spot Rows
+westCircleFils:true:0.0;                // Initial West Circle Filaments
+eastCircleFils:true:0.0;                // Initial East Circle Filaments
+circleFilsMinLength:true:0.1;           // Circle Filaments Min. Length
+circleFilsMaxLength:true:0.2;           // Circle Filaments Max. Length
+circleFilsMixedPolarity:false:0.0;      // Circle Filaments Mixed Polarity
+numNodeMyos:true:0.0;                   // Number of Myosins on each Protein Node
+numNodeMyoDimers:true:0.0;              // Number of Myosin Dimers on each Protein Node
+minFilLength:true:0.2;                  // Min. Filament Length
+maxFilLength:true:1.5;                  // Max. Filament Length
+stdDevActinDist:true:0.5;               // Std Dev Actin Distribution
+boxXDim:true:0.86;                      // Box X-dimension @ start
+boxYDim:true:0.86;                      // Box Y-dimension @ start
+boxZDim:true:0.86;                      // Box Z-dimension @ start
+boxXDimEnd:true:2.0;                    // Box X-dimension @ end
+boxYDimEnd:true:2.0;                    // Box Y-dimension @ end
+boxZDimEnd:true:2.0;                    // Box Z-dimension @ end
+boxChangeStartTime:true:20.0;           // Sim. Time to Start Changing Box Size
+boxChangeDuration:true:1.0;             // Duration of Change from Initial To Final Box Size
+boxChangeIntSteps:true:1000.0;          // Number of Time-Steps between Box Size Changes
+boxSpawnFraction:true:1.0;              // Fraction of Box Used for Spawning Things
+makeABug:false:0.0;                     // Sim. in a Sphere
+bugLength:true:4.0;                     // Bug Length
+bugRadius:true:2.0;                     // Sphere Radius
+actinConc:true:15.0;                    // Actin Concentration
+actinConcNonHydro:true:15.0;            // Non-hydrolyzable Actin Concentration
+actinConcX:true:1.0;                    // Actin Concentration XFactor
+aeta:true:0.03;                         // Viscosity in Bug
+capConc:true:2.0;                       // Cap Concentration
+nodeZone:true:0.9;                      // Node Dist. Zone
+nodeRadius:true:0.05;                   // Node Radius
+forminsPerNode:true:0.0;                // Formins per node
+nodeTransDiff:false:4.36768247499802E-14;// Protein Node Translation Diffusivity
+nodeRotDiff:false:13.10304742499406;    // Protein Node Rotational Diffusivity
+showProteinNode:true:0.0;               // Draw Protein Node?
+collideProteinNodes:true:0.0;           // Do Protein Nodes Collide?
+membraneCellRadius:true:1.0;            // Radius of membrane created cell
+membraneCellPackingFactor:true:1.0;     // Overlap when bonded
+membraneNodeRadius:true:0.05;           // Radius of connected membrane nodes
+membraneXNodeCt:true:30.0;              // Number of x-direction nodes
+membraneYNodeCt:true:30.0;              // Number of y-direction nodes
+maxMembranePasses:true:30.0;            // Sub-passes each time-step to relax membrane
+membraneMaxLinkStrain:true:0.1;         // Membrane Link Max Strain
+membraneNodeDragScale:true:1.0E-10;     // Scale Membrane Node Drag Factor
+membraneTstBallRadius:true:0.1;         // Membrane Test Ball Radius
+membraneTstBallForce:true:-1.0E-11;     // Membrane Test Ball Force
+membraneBrownianScale:true:1.0E-10;     // Membrane Brownian Scale Factor
+filTipRadiusForCollision:true:0.05;     // Sphere Radius at tip of filaments for collisions with membrane
+membraneTransparency:true:0.0;          // Membrane Transparency 
+stickiesA:true:390.0;                   // Number of Type A
+stickiesB:true:1170.0;                  // Number of Type B
+stickiesC:true:13500.0;                 // Number of Type C
+stickiesD:true:20.0;                    // Number of Type D
+stickiesARadius:true:0.0063;            // Radius of Type A
+stickiesBRadius:true:0.0117;            // Radius of Type B
+stickiesCRadius:true:0.015;             // Radius of Type C
+stickiesDRadius:true:0.02;              // Radius of Type D
+stickiesAValence:true:42.0;             // Valence of Type A
+stickiesBValence:true:2.0;              // Valence of Type B
+stickiesCValence:true:0.0;              // Valence of Type C
+stickiesDValence:true:0.0;              // Valence of Type D
+stickiesABUnbindProb:true:26.0;         // Unbind Prob. of AB Bond
+stickiesABBindProb:true:1.0;            // Bind Prob. of AB Bond
+stickiesMinBindDistance:true:0.0023;    //Min. Distance Between Sticky Points for Binding
+stickiesABTorqSpring:true:1.0E-18;      // Stickies Torsional Spring Between A and B
+stickiesABrownianAttn:true:1.0;         // Stickies A Brownian Attn When Bound
+stickiesBBrownianAttn:true:1.0;         // Stickies B Brownian Attn When Bound
+stickiesCTempKludge:true:1.0;           // Temperature Kludge Factor for Sticky Type C only
+genAttractionForce:true:0.0;            // Generalized Attraction Force, Surface Tension Kludge
+genAttractionCutOff:true:0.05;          // Distance past which there is no attraction
+useLennardJones:false:0.0;              // Use Lennard-Jones for Attraction/Repulsion?
+lJEpsilon:true:0.0075;                  // Lennard-Jones Epsilon (min. potential)
+lJSigma:true:0.018;                     // Lennard-Jones Sigma (potential cutoff distance)
+lJForceScale:true:1.0E-13;              // Lennard-Jones Force to Scale With
+fillNodeRadius:true:0.1;                // Radius of fill nodes
+fillNodeCt:true:30.0;                   // Number of fill nodes
+fillNodeDragScale:true:1.0;             // Scale Membrane Node Drag Factor
+fillNodeBrownianScale:true:1.0;         // Membrane Brownian Scale Factor
+actinSeed:true:3.0;                     // Monomers to seed filament
+actinOnCortex:true:0.0;                 // Actin constrained to cortex
+filSegLength:true:32.0;                 // Std. segment length
+filTorqSpring:false:1.0E-20;            // Filament Torsional Spring
+BTransCoeff:true:1.0;                   // Brownian Translational Coefficient
+BRotCoeff:true:0.5;                     // Brownian Rotational Coefficient
+maxSegAngle:false:22.5;                 // Max. Angle Between Segments
+maxSegDist:false:0.0108;                // Max. Dist. Between Segment EndPts
+maxPolyForce:true:1.0;                  // Max. Force To Poly Against
+polyLogFactor:true:4.605170185988092;   // Log Factor decrease in Poly
+nodeTorqSpring:true:1.0E-18;            // Node-Filament Torsional Spring
+maxNodeTetherStrainDist:false:0.0108;   // Max. Strain Distance in Node Tether
+nodeTetherDetachRate:false:0.001;       // Node Tether Detachment Rate
+forminMoves:false:0.0;                  // Mobile Attachment Point of formin to node
+forminRelease:true:1.0;                 // Random formin release rate
+noMonomersSimd:false:0.0;               // No monomers simulated
+noMonomersRendered:false:0.0;           // No monomers rendered
+filamentsAnneal:true:0.0;               // Do filaments end-to-end anneal?
+annealDist:true:0.054000000000000006;   // Tip distance for annealing
+annealAngleCosine:true:0.9;             // Cosine of max. angle for annealing
+maxLinksOnSeg:true:10.0;                // Max. Cross-Links per Segment
+minSepBetweenXLinks:true:0.027000000000000003;// Min. Separation Between Crosslinks
+sideBonds:true:0.0;                     // Cross-linkers? (1 for parallel, -1 antiparallel, 0 both)
+sideBondsRelax:false:0.0;               // Do side bonds relax, allowing translation of bound fils?
+sideBondsStabilize:false:1.0;           // Do side bonds stabilize depolymerization like nodes
+bundleStableFactor:false:2.0;           // Bundled filament resist cofilin binding (x each bound fil)
+filLinkSpring:true:1.0E-9;              // Link Spring Between Filaments
+filLinkTorqSpring:true:1.0E-19;         // Torque Spring Between Filaments
+maxXLinkBondAngle:true:0.2617993877991494;// Max. Allowed Angle Between Filaments for XLink Binding
+xLinkTransAttn:true:1.0;                // Trans. Attn. Factor per link for Cross-linked Segments
+xLinkRotAttn:true:1.0;                  // Rot. Attn. Factor per link for Cross-linked Segments
+crossLinkGrabDist:true:0.0108;          // Max. Distance to establish cross-link
+linkOffConst:true:1.0;                  // FilLink Dissolution Constant - (C)
+linkOffCoeff:true:1.0;                  // FilLink Dissolution Coeff. - (alpha)
+linkOffExp:true:2.0;                    // FilLink Dissolution Exp. - (beta)
+kATPOn1:true:1.3;                       // ATP Actin On Rate
+kATPOff1:true:0.8;                      // ATP Actin Off Rate
+kADPOff1:true:2.7;                      // ADP Actin Off Rate
+kATPOn1NonHydro:true:0.0;               // ATP Actin On Rate - Non-hydrolyzable Actin
+kATPOff1NonHydro:true:0.0;              // ATP Actin Off Rate - Non-hydrolyzable Actin
+kATPOn2:true:11.6;                      // ATP Actin On Rate
+kATPOff2:true:1.4;                      // ATP Actin Off Rate
+kADPOff2:true:7.2;                      // ADP Actin Off Rate
+kATPOn2WithFormin:true:11.6;            // ATP Actin On Rate If Attached To Formin
+kATPOff2WithFormin:true:1.4;            // ATP Actin Off Rate If Attached To Formin
+kADPOff2WithFormin:true:7.2;            // ADP Actin Off Rate If Attached To Formin
+kATPOn2NonHydro:true:0.0;               // ATP Actin On Rate - Non-hydrolyzable Actin
+kATPOff2NonHydro:true:0.0;              // ATP Actin Off Rate - Non-hydrolyzable Actin
+kATPOn2NonHydroWithFormin:true:0.0;     // ATP Actin On Rate - No-hydro/node attached
+kATPOff2NonHydroWithFormin:true:0.0;    // ATP Actin Off Rate - No-hydro/node attached
+capRate:true:3.0;                       // Cap rate by cap protein
+cofilinRate:true:0.1;                   // Cofilin Binding Rate
+cofilinConc:true:3.0;                   // Cofilin Concentration
+cofilinRatio:true:1.0;                  // Cofilin Dissolve Ratio
+tropmyosinOnRate:true:1.0;              // Tropomyosin Binding Rate
+tropmyosinOffRate:true:0.0;             // Tropomyosin Unbinding Rate
+tropomyosinConc:true:1.0;               // Tropomyosin Concentration
+branchRateNearArpFactors:true:0.1;      // Arp2/3 Branch Rate Near Arp Factors
+arpConc:true:0.0;                       // Arp2/3 Concentration
+branchZone:true:0.05;                   // Arp2/3 Branch Zone Near Arp Factors
+myoRodLength:true:0.08;                 // Myosin rod length
+myoLeverLength:true:0.008;              // Myosin lever length
+myoMotorLength:true:0.02;               // Myosin motor length
+myoMotorAlignWithFilTolerance:true:-0.4;// Myosin motor alignment with filament tolerance for binding
+myosinStallForce:true:6.0;              // Single-head Myosin Stall Force
+myosinBreakForce:true:12.0;             // Single-head Myosin Break Force
+alphaCatch:true:0.92;                   // Alpha_Catch for force-based myosin release
+alphaSlip:true:0.08;                    // Alpha_Slip for force-based myosin release
+xCatch:true:2.5E-9;                     // X_Catch for force-based myosin release
+xSlip:true:4.0E-10;                     // X_Slip for force-based myosin release
+kOff:true:100.0;                        // kOff for force-based myosin release
+myoColTol:true:0.006;                   // Myosin motor collision tolerance
+myoRebindTime:true:1.0E-5;              // Myosin motor rebind time
+atpOnMyo:true:20000.0;                  // Myosin ATP On rate: on/off-filament
+myoOnFilATP_ADPPi:true:100.0;           // Myosin ATP-ADPPi rate: on-filament
+myoOnFilADPPi_ADP:true:10000.0;         // Myosin ADPPi-ADP rate: on-filament
+myoOnFilADP_None:true:1000.0;           // Myosin ADP Off rate: on-filament
+myoOffFilATP_ADPPi:true:100.0;          // Myosin ATP-ADPPi rate: off-filament
+myoOffFilADPPi_ADP:true:0.0;            // Myosin ADPPi-ADP rate: off-filament
+myoOffFilADP_None:true:1000.0;          // Myosin ADP Off rate: off-filament
+fixedMyosinDensity:true:400.0;          // Fixed Myosin Density on Surface
+fixedMyosinZValue:true:-0.05;           // Fixed Myosin Z-value of Rod End1
+glidingFilamentLength:true:1.0;         // Length of Actin Filament In Gliding Assay
+glidingFilamentForce:true:1.0;          // Force Working Against Gliding Motion
+capNumEnd1:false:3.0;                   // Cap at End1
+capNumEnd2:false:3.0;                   // Cap at End2
+capNumEnd1WithNode:false:3.0;           // Cap at End1 with node
+capNumEnd2WithNode:false:3.0;           // Cap at End2 with node
+polyCompressionCutoff:true:0.0;         // Compressive force that stops poly.
+kRdmNuc:false:0.0;                      // Random Actin Nucleation Rate
+kNodeNuc:true:10.0;                     // On Node Actin Nucleation By Formin
+kHydrolysis:true:0.3;                   // Monomer Hydrolysis Rate
+kDissociation:true:1.0;                 // Monomer Dissociation Rate
+showTime:true:0.0;                      // Show Time
+showBoundStats:true:0.0;                // Show Bond Statistics
+showConc:true:0.0;                      // Show Actin Conc
+showNonHydroConc:false:0.0;             // Show Non-Hydro Actin Conc
+showFilCt:true:0.0;                     // Show Filament Count
+showFilLinkCt:true:0.0;                 // Show FilSegment Link Count
+showFilSegCt:false:0.0;                 // Show FilSegment Count
+showMonCt:true:0.0;                     // Show Monomer Count
+showMyoCt:true:0.0;                     // Show Myosin Count
+fixedHistScale:false:100.0;             // Fixed Vertical Scale
+showHistBox:true:0.0;                   // Show Box
+showYHistTics:true:0.0;                 // Show Verical Scale
+flatTops:true:0.0;                      // Flat Tops on Bins
