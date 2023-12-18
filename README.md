@@ -5,4 +5,4 @@ There are three folders here. First is the "Particle_tracking_vs_Intensity" fold
 
 The second is "Java_MD_simulations" folder, which includes molecular dynamics simulation program using Java8 "Java_MD_simulation_program.jar" and subsequent analyses using Jupyter notebook "Subsequent_analyses_after_simulation.ipynb". There is also an example parameter text file "simulation_input_parameter_file", which can be used for running MD simulations by executing "java -jar -Xmx8G Java_MD_simulation_program.jar simulation_input_parameter_file" in the terminal.
 
-The third is "HOOMD_blue_MD_simulations" folder, which includes moleculuar dynamics simulation program using HOOMD-blue "" and subsequent analyses using Jupyter notebook "Subsequent_analyses.ipynb".
+The third is "HOOMD_blue_MD_simulations" folder, which contains scripts for setting up Coarse-Grained MD simulations in HOOMD Blue and subsequent analyses using Jupyter notebook "Subsequent_analyses.ipynb".
