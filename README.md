@@ -1,5 +1,5 @@
 # Condensate_analyses
-These codes are used in the paper of Shu et al. "Mesoscale molecular assembly is favored by the active, crowded cytoplasm", for both experimental analyses and molecular dynamics simulations and subsequent analyses.
+These codes are used in the paper of Shu et al. "Mesoscale molecular assembly is favored by the active, crowded cytoplasm", for both experimental analyses and molecular dynamics simulations with subsequent analyses.
 
 There are three folders here. First is the "Particle_tracking_vs_Intensity" folder, which analyzes the experimental data using MATLAB. Microscope images and time course movies of droplets are first processed through FIJI plugin 'Trackmate', which generates '.csv' files indicating spots properties using particle detection function and '.xlm' files indicating particle tracking trajectories. The codes then use these '.csv' and '.xlm' files as inputs and analyze droplets properties including the mean pixel intensity, total droplet intensity, number of droplets etc, as well as droplets trajectories properties including diffusivity, angle correlation function and normalized velocity autocorrelation functions. Details of how to run functions can also be found in the word documents located in the folder: "Program running instructions.docx".
 
