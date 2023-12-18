@@ -40,20 +40,24 @@ def get_bond_table(trajectory,frame_id=-1,sort_type="hexamer", step_time=1):
         sort_column = 1
     else:
         sort_column = 0
+
     frame = trajectory[frame_id]
 
     bodies = frame.particles.body
 
     bonds = frame.bonds
     bond_tags = bonds.group
+
     bond_tags = bond_tags[np.argsort(bond_tags[:,sort_column])]
     
     column1_bodies = bodies[bond_tags[:,0]]
     column2_bodies = bodies[bond_tags[:,1]]
-    body_array = np.append(column1_bodies.reshape(-1,1),column2_bodies.reshape(-1,1),axis=-1)
-    return body_array
 
-def bonds_analysis(trajectory,frame_id=-1,sort_type="hexamer", step_time=1, notebook=True):    
+    body_array = np.append(column1_bodies.reshape(-1,1),column2_bodies.reshape(-1,1),axis=-1)
+
+    return body_array,bodies
+
+def bonds_analysis(trajectory,frame_id=-1,sort_type="hexamer", step_time=1, notebook=True):
     if sort_type == "hexamer":
         sort_column = 1
     else:
@@ -73,6 +77,7 @@ def bonds_analysis(trajectory,frame_id=-1,sort_type="hexamer", step_time=1, note
     #    assert np.all(types[bond_tags[:,1]]==types[bond_tags[0,1]]),"Not all particles in list are the same type"
     column1_bodies = bodies[bond_tags[:,0]]
     column2_bodies = bodies[bond_tags[:,1]]
+
     body_array = np.append(column1_bodies.reshape(-1,1),column2_bodies.reshape(-1,1),axis=-1)
 
     all_xyz = frame.particles.position
@@ -94,7 +99,7 @@ def bonds_analysis(trajectory,frame_id=-1,sort_type="hexamer", step_time=1, note
 
     position_array = np.append(main_particle_xyz, diff.reshape(-1,1),axis=-1)
     indices = np.arange(len(main_particle_xyz)).reshape(-1,1)
-    
+
     if notebook is True:
         return body_array, position_array, diff
     else:
